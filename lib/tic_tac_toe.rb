@@ -42,7 +42,7 @@ def turn(board)
   input_to_index(input)
   index = input.to_i
   index -= 1
-
+  value = current_player(board)
   if valid_move?(board, index)
     move(board, index, value = "X")
     display_board(board)
